@@ -43,37 +43,34 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="欧几里德算法是数学里面一个求最大公约数的算法，也被称为辗转相除法。
-它的原理基于以下定理：
-设 a,b 均为整数
-
-GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
-具体数学证明过程此处略过不谈，如果感兴趣可参考这里。
-用代码实现如下:
-12345678910111213@implementation Euclid+ (NSNumber *)GCDMethod:(NS">
+<meta name="description" content="这里只是简单简单介绍深入RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
+质数(详细参见这里)：
+质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
+最大公约数(详细参见这里):
+最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
+欧拉函数(详细参见这里):
+欧拉函数ø(n)是小于或等于n的正整数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="欧几里德算法 & 扩展欧几里德算法">
-<meta property="og:url" content="http://yoursite.com/2015/11/04/欧几里德算法 & 扩展欧几里德算法/index.html">
+<meta property="og:title" content="RSA相关数学知识">
+<meta property="og:url" content="http://yoursite.com/2015/11/22/RSA相关数学知识/index.html">
 <meta property="og:site_name" content="iTrandy's Blog">
-<meta property="og:description" content="欧几里德算法是数学里面一个求最大公约数的算法，也被称为辗转相除法。
-它的原理基于以下定理：
-设 a,b 均为整数
-
-GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
-具体数学证明过程此处略过不谈，如果感兴趣可参考这里。
-用代码实现如下:
-12345678910111213@implementation Euclid+ (NSNumber *)GCDMethod:(NS">
-<meta property="og:updated_time" content="2015-11-04T07:04:40.000Z">
+<meta property="og:description" content="这里只是简单简单介绍深入RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
+质数(详细参见这里)：
+质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
+最大公约数(详细参见这里):
+最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
+欧拉函数(详细参见这里):
+欧拉函数ø(n)是小于或等于n的正整数">
+<meta property="og:updated_time" content="2015-11-22T10:08:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="欧几里德算法 & 扩展欧几里德算法">
-<meta name="twitter:description" content="欧几里德算法是数学里面一个求最大公约数的算法，也被称为辗转相除法。
-它的原理基于以下定理：
-设 a,b 均为整数
-
-GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
-具体数学证明过程此处略过不谈，如果感兴趣可参考这里。
-用代码实现如下:
-12345678910111213@implementation Euclid+ (NSNumber *)GCDMethod:(NS">
+<meta name="twitter:title" content="RSA相关数学知识">
+<meta name="twitter:description" content="这里只是简单简单介绍深入RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
+质数(详细参见这里)：
+质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
+最大公约数(详细参见这里):
+最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
+欧拉函数(详细参见这里):
+欧拉函数ø(n)是小于或等于n的正整数">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -85,7 +82,7 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
 
 
 
-  <title> 欧几里德算法 & 扩展欧几里德算法 | iTrandy's Blog </title>
+  <title> RSA相关数学知识 | iTrandy's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -209,7 +206,7 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
             
             
               
-                欧几里德算法 & 扩展欧几里德算法
+                RSA相关数学知识
               
             
           </h1>
@@ -218,8 +215,8 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-04T15:04:40+08:00" content="2015-11-04">
-              2015-11-04
+            <time itemprop="dateCreated" datetime="2015-11-22T18:08:55+08:00" content="2015-11-22">
+              2015-11-22
             </time>
           </span>
 
@@ -242,42 +239,23 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
       
 
       
-        <span itemprop="articleBody"><p><strong>欧几里德算法</strong>是数学里面一个求最大公约数的算法，也被称为辗转相除法。</p>
-<p>它的原理基于以下定理：</p>
-<pre><code>设 <span class="tag">a</span>,<span class="tag">b</span> 均为整数
-
-<span class="function"><span class="title">GCD</span><span class="params">(a,b)</span></span> = <span class="function"><span class="title">GCD</span><span class="params">(b,a%b)</span></span> （GCD表示求两个数的最大公约数）
-</code></pre><p>具体数学证明过程此处略过不谈，如果感兴趣可参考<a href="https://zh.wikipedia.org/wiki/輾轉相除法" target="_blank" rel="external">这里</a>。</p>
-<p>用代码实现如下:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Euclid</span></span></span><br><span class="line"></span><br><span class="line">+ (<span class="built_in">NSNumber</span> *)GCDMethod:(<span class="built_in">NSInteger</span>) x and:(<span class="built_in">NSInteger</span>) y</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (y == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="built_in">NSNumber</span> numberWithInteger:x];</span><br><span class="line">    &#125;<span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> [Euclid GCDMethod:y and:x%y];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-<p>而<strong>扩展欧几里德算法</strong>则表述如下：</p>
-<pre><code>设 <span class="tag">a</span>,<span class="tag">b</span> 均为整数
-
-ax + by = <span class="function"><span class="title">GCD</span><span class="params">(a,b)</span></span> 总有整数解。
-</code></pre><p>具体数学证明过程我们略过不谈，如果感兴趣可以参考<a href="https://zh.wikipedia.org/wiki/扩展欧几里得算法" target="_blank" rel="external">这里</a>。</p>
-<p>我们来看这个等式，当a、b不互质的时候，也就是GCD(a,b) != 1。 因为GCD(a,b)是a，b的最大公约数，所以等式左右两边总可以约去公约数，最后会化简成 ax + by = 1的形式，其中a,b互质。这个问题也就变成了当a、b互质的时候，ax + by = 1总有整数解。</p>
-<p>现在想办法对ax + by = 1求解。</p>
-<p>上面欧几里德算法可知a、b互质则b、a%b互质，所以有</p>
-<p>ax + by = 1</p>
-<p>也有 bx<sub>1</sub> + a%by<sub>1</sub> = 1</p>
-<p>那么可以得到： </p>
-<p><strong>ax + by = 1 = bx<sub>1</sub> + a%by<sub>1</sub> = bx<sub>1</sub> + (a - (a/b)*b)y<sub>1</sub></strong></p>
-<p><strong>ax + by = ay<sub>1</sub> + b(x<sub>1</sub> - a/b*y<sub>1</sub>)</strong></p>
-<p>上面这个式子是恒等的，所以也就是 x = y<sub>1</sub>, y = x<sub>1</sub> - a/b*y<sub>1</sub>。</p>
-<p>这相当于确定了 x、y和x<sub>1</sub>、y<sub>1</sub>之间的关系。</p>
-<p>那x<sub>1</sub>、y<sub>1</sub>又表示什么意思呢？</p>
-<p>前面说过，x<sub>1</sub>、y<sub>1</sub>表示的是GCD(b,a%b) = 1的解。</p>
-<p>那么整个推导串联起来就是：GCD(a,b) = 1的解x、y和GCD(b,a%b) = 1的解x<sub>1</sub>、y<sub>1</sub>有关，关系式为</p>
-<p><strong>x = y<sub>1</sub>, y = x<sub>1</sub> - a/b*y<sub>1</sub></strong>。</p>
-<p>这条推论又可以递推下去：GCD(b,a%b) = 1的解x<sub>1</sub>、y<sub>1</sub>和GCD(a%b,b%(a%b)) = 1的解x<sub>2</sub>、y<sub>2</sub>有关，关系式为 </p>
-<p><strong>x<sub>1</sub> = y<sub>2</sub>, y<sub>1</sub> = x<sub>2</sub> - a/b*y<sub>2</sub></strong>。</p>
-<p>…. </p>
-<p>可以依次递推下去，那么最后一次递推应该是y<sub>n</sub> = 0,此时做边界判断。</p>
-<p>由 <strong> GCD(k,0) = k</strong>,此时 kx + 0*y = k, 解为 x = 1 , y = 0。</p>
-<p>我们可以得知上面推导步骤的最后边界条件应该是当y<sub>n</sub> = 0的时候，返回解 x<sub>n</sub> = 1，y<sub>n</sub> = 0，再由此逆推出x和y的解。</p>
-<p>代码实现如下:</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Euclid</span></span></span><br><span class="line"></span><br><span class="line">+ (<span class="built_in">NSNumber</span> *)GCDMethod:(<span class="built_in">NSInteger</span>) a and:(<span class="built_in">NSInteger</span>) b</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="built_in">NSNumber</span> numberWithInteger:a];</span><br><span class="line">    &#125;<span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> [Euclid GCDMethod:b and:a%b];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (<span class="built_in">NSDictionary</span> *)GCDExtensionMethod:(<span class="built_in">NSInteger</span>)a and:(<span class="built_in">NSInteger</span>)b</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSDictionary</span>* resultDic;</span><br><span class="line">    <span class="built_in">NSInteger</span> x,y,tmp;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> @&#123;<span class="string">@"x"</span>:<span class="string">@"1"</span>,<span class="string">@"y"</span>:<span class="string">@"0"</span>&#125;;</span><br><span class="line">    &#125;<span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        resultDic = [Euclid GCDExtensionMethod:b and:a%b];</span><br><span class="line">        tmp = [resultDic[<span class="string">@"x"</span>] integerValue];</span><br><span class="line">        x = [resultDic[<span class="string">@"y"</span>] integerValue];</span><br><span class="line">        y = tmp - (a/b)*[resultDic[<span class="string">@"y"</span>] integerValue];</span><br><span class="line">        <span class="keyword">return</span> @&#123;<span class="string">@"x"</span>:[<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%ld"</span>,x],<span class="string">@"y"</span>:[<span class="built_in">NSString</span> stringWithFormat:<span class="string">@"%ld"</span>,y]&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-</span>
+        <span itemprop="articleBody"><p>这里只是简单简单介绍<a href="">深入RSA</a>需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。</p>
+<p>质数(详细参见<a href="https://zh.wikipedia.org/wiki/素数" target="_blank" rel="external">这里</a>)：</p>
+<pre><code>质数，也叫素数。如果一个自然数有且只有两个正约数（<span class="number">1</span>和此数本身），则称之为素数。
+</code></pre><p>最大公约数(详细参见<a href="https://zh.wikipedia.org/wiki/最大公因數" target="_blank" rel="external">这里</a>):</p>
+<pre><code>最大公约数，也叫最大公因数，简写为<span class="keyword">GCD</span>，指几个整数公有约数中最大的一个。
+</code></pre><p>欧拉函数(详细参见<a href="https://zh.wikipedia.org/wiki/欧拉函数" target="_blank" rel="external">这里</a>):</p>
+<pre><code>欧拉函数ø(<span class="keyword">n</span>)是小于或等于<span class="keyword">n</span>的正整数中与<span class="keyword">n</span>互质的数的数目。
+若<span class="keyword">m</span>是质数，ø(<span class="keyword">m</span>) = <span class="keyword">n</span> - 1
+若<span class="keyword">m</span>,<span class="keyword">n</span>互质，ø(mn) = ø(<span class="keyword">m</span>) * ø(<span class="keyword">n</span>)
+</code></pre><p>模逆元(详细参见<a href="https://zh.wikipedia.org/wiki/模反元素" target="_blank" rel="external">这里</a>):</p>
+<pre><code>若有正整数<span class="operator">a</span>、b均小于n
+则满足 ab = <span class="number">1</span>(<span class="operator">mod</span> n) 的b称为<span class="operator">a</span>对n的模逆元
+<span class="operator">a</span>对n的模逆元存在的充要条件是<span class="operator">a</span>、n互质
+</code></pre><p>扩展欧几里德算法(详细参见<a href="https://zh.wikipedia.org/wiki/扩展欧几里得算法" target="_blank" rel="external">这里</a>，代码实现见<a href="http://itrandy.com/2015/11/04/欧几里德算法%20&amp;%20扩展欧几里德算法/" target="_blank" rel="external">这里</a>):</p>
+<pre><code>定理： 给予二整数a、<span class="keyword">b，必存在有整数x、y使得ax </span>+ <span class="keyword">by </span>= gcd(a,<span class="keyword">b)
+</span>拓展欧几里德算法可对上面定理进行求解，亦可用于求模逆元
+</code></pre></span>
       
     </div>
 
@@ -288,13 +266,13 @@ ax + by = <span class="function"><span class="title">GCD</span><span class="para
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/11/04/欧几里德算法 & 扩展欧几里德算法/" rel="next" title="欧几里德算法 & 扩展欧几里德算法">
+                <i class="fa fa-chevron-left"></i> 欧几里德算法 & 扩展欧几里德算法
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/22/RSA相关数学知识/" rel="prev" title="RSA相关数学知识">
-                RSA相关数学知识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
