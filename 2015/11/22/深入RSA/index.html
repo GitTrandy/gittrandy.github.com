@@ -57,7 +57,7 @@
 其安全性的保证来自于目前的数学难题：大数的质因数分解的困难性。
 数学上还没有找到一种好的方式快速的将一个大数分解成两个质数相乘的形式。
 而在计算上，由于目前的机器性能问题，目前能被暴力验算分解的RSA密钥长度为663个二进制位数（参见），所以基本上我们认为RSA使用1024的密钥长度是安全的，极其需要安全性的可以使用长度为2048的密">
-<meta property="og:updated_time" content="2015-11-22T14:54:33.000Z">
+<meta property="og:updated_time" content="2015-11-22T15:36:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入RSA">
 <meta name="twitter:description" content="RSA是典型的非对称加密算法，也是目前世界上最安全的加密算法。
@@ -262,7 +262,7 @@
 <p>数学上还没有找到一种好的方式快速的将一个大数分解成两个质数相乘的形式。</p>
 <p>而在计算上，由于目前的机器性能问题，目前能被暴力验算分解的RSA密钥长度为663个二进制位数（参见），所以基本上我们认为RSA使用1024的密钥长度是安全的，极其需要安全性的可以使用长度为2048的密钥进行RSA加密。</p>
 <p>当深入的去探究RSA的原理的时候，需要使用到一些数学知识，可以参看<a href="http://itrandy.com/2015/11/20/RSA相关数学知识/" target="_blank" rel="external">这里</a>。</p>
-<h3 id="RSA加密流程：">RSA加密流程：</h3><ol>
+<h3 id="RSA加密流程">RSA加密流程</h3><ol>
 <li><p>我们找两个不相等的质数: p,q</p>
 </li>
 <li><p>计算p和q的乘积，记做n</p>
@@ -282,7 +282,7 @@
 </li>
 </ol>
 <p>由上面的简要流程我们可以看到实际上的加密解密都是数学运算,字符串可以取ASCII值或者Unicode值。</p>
-<h3 id="实践：">实践：</h3><p>(1)首先我们随意找两个不相等的质数：13和17。这里我选择了两个比较小的质数，这是为了减少后面的计算量。通常来说我们真正使用RSA加密的时候会选择两个比较大的质数，这两个质数的乘积越大，则越难以破解。</p>
+<h3 id="实践">实践</h3><p>(1)首先我们随意找两个不相等的质数：13和17。这里我选择了两个比较小的质数，这是为了减少后面的计算量。通常来说我们真正使用RSA加密的时候会选择两个比较大的质数，这两个质数的乘积越大，则越难以破解。</p>
 <p>(2)这样我们就得到: n = 13x17 = 221</p>
 <p>(3)ø(n) = (13-1)*(17-1) = 192</p>
 <p>这里ø表示的是欧拉函数，ø(n)就是求n的欧拉函数，</p>
@@ -448,7 +448,7 @@ d的通解是：d = - <span class="number">25</span> + <span class="number">192<
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#RSA加密流程："><span class="nav-number">1.</span> <span class="nav-text">RSA加密流程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实践："><span class="nav-number">2.</span> <span class="nav-text">实践：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安全性"><span class="nav-number">3.</span> <span class="nav-text">安全性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#RSA加密流程"><span class="nav-number">1.</span> <span class="nav-text">RSA加密流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实践"><span class="nav-number">2.</span> <span class="nav-text">实践</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安全性"><span class="nav-number">3.</span> <span class="nav-text">安全性</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
