@@ -201,6 +201,110 @@
             
             
               
+                <a class="post-title-link" href="/2015/11/28/深入理解Function/" itemprop="url">
+                  深入理解Function
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-11-28T21:50:19+08:00" content="2015-11-28">
+              2015-11-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/源码/" itemprop="url" rel="index">
+                    <span itemprop="name">源码</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            我们知道Objective-C是一门动态的语言，一个方法具体的执行决定是在运行的时候。
+那么在底层方法具体是怎么被找到的？
+下面我们来尝试了解这些问题。
+首先我们知道Objective-C里面一个方法这么调用的。
+1[instance method];
+这表示我们调用instance的method方法。
+我们应该在苹果官方文档或者一些技术文章中了解过，Objective-C里面的方法实际上是转化为了这个方法的调用。
+1id objc_msgSend(id self, SEL op, ...)
+从这里我们可以看到，所有的方法调用实际上都转化为了消息。
+这里面self是接受消息的类的实例的指针，o
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/28/深入理解Function/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2015/11/25/深入理解Class/" itemprop="url">
                   深入理解Class
                 </a>
@@ -632,7 +736,7 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
