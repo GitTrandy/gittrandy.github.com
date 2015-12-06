@@ -57,7 +57,7 @@
 其安全性的保证来自于目前的数学难题：大数的质因数分解的困难性。
 数学上还没有找到一种好的方式快速的将一个大数分解成两个质数相乘的形式。
 而在计算上，由于目前的机器性能问题，目前能被暴力验算分解的RSA密钥长度为663个二进制位数（参见），所以基本上我们认为RSA使用1024的密钥长度是安全的，极其需要安全性的可以使用长度为2048的密">
-<meta property="og:updated_time" content="2015-11-22T15:43:37.000Z">
+<meta property="og:updated_time" content="2015-12-06T11:56:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解RSA">
 <meta name="twitter:description" content="RSA是典型的非对称加密算法，也是目前世界上最安全的加密算法。
@@ -275,7 +275,7 @@
 </li>
 <li><p>将n和e封装成公钥，将n和d封装成私钥</p>
 </li>
-<li><p>使用公钥加密x(x为整数且x<n),即计算：x<sup>e = y(mod n),求出y</n),即计算：x<sup></p>
+<li><p>使用公钥加密x(x为整数且x &lt; n)，即计算：x<sup>e</sup> = y(mod n)，求出y</p>
 </li>
 <li><p>将加密后的结果y发送给对方，对方使用私钥解密。由数学上可以证明：y<sup>d</sup> = x (mod n)，所以计算可得x</p>
 <p> 至此整个加密解密也就完成了。</p>
