@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="数学," />
+  <meta name="keywords" content="Code,深入理解," />
 
 
 
@@ -45,34 +45,31 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="这里只是简单简单介绍深入理解RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
-质数(详细参见这里)：
-质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
-最大公约数(详细参见这里):
-最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
-欧拉函数(详细参见这里):
-欧拉函数ø(n)是小于或等于n的正">
+<meta name="description" content="从定义描述上来说，block是带有自动变量的匿名函数。
+从数据结构上来说，block是Objective-C的对象。
+一个标注的Block应该被定义为这样： ^ 返回值类型 参数列表 表达式
+如： ^ int (int a) { return a; };
+但是我们有时候会省略一部分，比如省略掉返回值类型的： ^ (int a) { a++; }
+或者省略掉返回值和参数列表的： ^ { printf">
 <meta property="og:type" content="article">
-<meta property="og:title" content="RSA相关数学知识">
-<meta property="og:url" content="http://yoursite.com/2015/11/20/RSA相关数学知识/index.html">
+<meta property="og:title" content="深入理解Block">
+<meta property="og:url" content="http://yoursite.com/2016/01/09/深入理解Block/index.html">
 <meta property="og:site_name" content="iTrandy's Blog">
-<meta property="og:description" content="这里只是简单简单介绍深入理解RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
-质数(详细参见这里)：
-质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
-最大公约数(详细参见这里):
-最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
-欧拉函数(详细参见这里):
-欧拉函数ø(n)是小于或等于n的正">
-<meta property="og:updated_time" content="2015-11-22T15:45:02.000Z">
+<meta property="og:description" content="从定义描述上来说，block是带有自动变量的匿名函数。
+从数据结构上来说，block是Objective-C的对象。
+一个标注的Block应该被定义为这样： ^ 返回值类型 参数列表 表达式
+如： ^ int (int a) { return a; };
+但是我们有时候会省略一部分，比如省略掉返回值类型的： ^ (int a) { a++; }
+或者省略掉返回值和参数列表的： ^ { printf">
+<meta property="og:updated_time" content="2016-01-10T13:27:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RSA相关数学知识">
-<meta name="twitter:description" content="这里只是简单简单介绍深入理解RSA需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。
-质数(详细参见这里)：
-质数，也叫素数。如果一个自然数有且只有两个正约数（1和此数本身），则称之为素数。
-最大公约数(详细参见这里):
-最大公约数，也叫最大公因数，简写为GCD，指几个整数公有约数中最大的一个。
-欧拉函数(详细参见这里):
-欧拉函数ø(n)是小于或等于n的正">
+<meta name="twitter:title" content="深入理解Block">
+<meta name="twitter:description" content="从定义描述上来说，block是带有自动变量的匿名函数。
+从数据结构上来说，block是Objective-C的对象。
+一个标注的Block应该被定义为这样： ^ 返回值类型 参数列表 表达式
+如： ^ int (int a) { return a; };
+但是我们有时候会省略一部分，比如省略掉返回值类型的： ^ (int a) { a++; }
+或者省略掉返回值和参数列表的： ^ { printf">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -84,7 +81,7 @@
 
 
 
-  <title> RSA相关数学知识 | iTrandy's Blog </title>
+  <title> 深入理解Block | iTrandy's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -218,7 +215,7 @@
             
             
               
-                RSA相关数学知识
+                深入理解Block
               
             
           </h1>
@@ -227,8 +224,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-20T12:14:43+08:00" content="2015-11-20">
-              2015-11-20
+            <time itemprop="dateCreated" datetime="2016-01-09T18:31:26+08:00" content="2016-01-09">
+              2016-01-09
             </time>
           </span>
 
@@ -237,8 +234,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/RSA/" itemprop="url" rel="index">
-                    <span itemprop="name">RSA</span>
+                  <a href="/categories/源码/" itemprop="url" rel="index">
+                    <span itemprop="name">源码</span>
                   </a>
                 </span>
 
@@ -266,23 +263,49 @@
       
 
       
-        <span itemprop="articleBody"><p>这里只是简单简单介绍<a href="http://itrandy.com/2015/11/22/深入理解RSA" target="_blank" rel="external">深入理解RSA</a>需要知道的相关数学知识点，对于部分的知识点的介绍只挑出了部分，并不是全面，具体请参看链接。</p>
-<p>质数(详细参见<a href="https://zh.wikipedia.org/wiki/素数" target="_blank" rel="external">这里</a>)：</p>
-<pre><code>质数，也叫素数。如果一个自然数有且只有两个正约数（<span class="number">1</span>和此数本身），则称之为素数。
-</code></pre><p>最大公约数(详细参见<a href="https://zh.wikipedia.org/wiki/最大公因數" target="_blank" rel="external">这里</a>):</p>
-<pre><code>最大公约数，也叫最大公因数，简写为<span class="keyword">GCD</span>，指几个整数公有约数中最大的一个。
-</code></pre><p>欧拉函数(详细参见<a href="https://zh.wikipedia.org/wiki/欧拉函数" target="_blank" rel="external">这里</a>):</p>
-<pre><code>欧拉函数ø(<span class="keyword">n</span>)是小于或等于<span class="keyword">n</span>的正整数中与<span class="keyword">n</span>互质的数的数目。
-若<span class="keyword">m</span>是质数，ø(<span class="keyword">m</span>) = <span class="keyword">n</span> - 1
-若<span class="keyword">m</span>,<span class="keyword">n</span>互质，ø(mn) = ø(<span class="keyword">m</span>) * ø(<span class="keyword">n</span>)
-</code></pre><p>模逆元(详细参见<a href="https://zh.wikipedia.org/wiki/模反元素" target="_blank" rel="external">这里</a>):</p>
-<pre><code>若有正整数<span class="operator">a</span>、b均小于n
-则满足 ab = <span class="number">1</span>(<span class="operator">mod</span> n) 的b称为<span class="operator">a</span>对n的模逆元
-<span class="operator">a</span>对n的模逆元存在的充要条件是<span class="operator">a</span>、n互质
-</code></pre><p>扩展欧几里德算法(详细参见<a href="https://zh.wikipedia.org/wiki/扩展欧几里得算法" target="_blank" rel="external">这里</a>，代码实现见<a href="http://itrandy.com/2015/11/04/欧几里德算法%20&amp;%20扩展欧几里德算法/" target="_blank" rel="external">这里</a>):</p>
-<pre><code>定理： 给予二整数a、<span class="keyword">b，必存在有整数x、y使得ax </span>+ <span class="keyword">by </span>= gcd(a,<span class="keyword">b)
-</span>拓展欧几里德算法可对上面定理进行求解，亦可用于求模逆元
-</code></pre></span>
+        <span itemprop="articleBody"><p>从定义描述上来说，block是带有自动变量的匿名函数。</p>
+<p>从数据结构上来说，block是Objective-C的对象。</p>
+<p>一个标注的Block应该被定义为这样： ^ 返回值类型 参数列表 表达式</p>
+<p>如： ^ int (int a) { return a; };</p>
+<p>但是我们有时候会省略一部分，比如省略掉返回值类型的： ^ (int a) { a++; }</p>
+<p>或者省略掉返回值和参数列表的： ^ { printf(“hello block”);}</p>
+<p>我们知道Objective-C里面的方法都会具体在执行的时候转化为C语言的代码，比如：objc_msgSend</p>
+<p>而其实Block也是如此。</p>
+<p>我们编写一段简单的Block代码，使用如下命令来转换：</p>
+<pre><code><span class="title">clang</span> -rewrite-objc 源代码文件名
+</code></pre><p>源文件中代码如下：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">   	<span class="keyword">@autoreleasepool</span> &#123;</span><br><span class="line">       <span class="keyword">void</span> (^block)(<span class="keyword">void</span>) = ^<span class="keyword">void</span>(<span class="keyword">void</span>)&#123;printf(<span class="string">"Block"</span>);&#125;; </span><br><span class="line">       block(); </span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>转化之后得到的文件内容很多，大部分我们都可以忽略，我们只关注最后一部分的内容：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> __main_block_impl_0 &#123;</span><br><span class="line">  <span class="keyword">struct</span> __block_impl impl;</span><br><span class="line">  <span class="keyword">struct</span> __main_block_desc_0* Desc;</span><br><span class="line">  __main_block_impl_0(<span class="keyword">void</span> *fp, <span class="keyword">struct</span> __main_block_desc_0 *desc, <span class="keyword">int</span> flags=<span class="number">0</span>) &#123;</span><br><span class="line">    impl<span class="variable">.isa</span> = &amp;_<span class="built_in">NSConcreteStackBlock</span>;</span><br><span class="line">    impl<span class="variable">.Flags</span> = flags;</span><br><span class="line">    impl<span class="variable">.FuncPtr</span> = fp;</span><br><span class="line">    Desc = desc;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> __main_block_func_0(<span class="keyword">struct</span> __main_block_impl_0 *__cself) &#123;</span><br><span class="line">printf(<span class="string">"Block"</span>);&#125;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">struct</span> __main_block_desc_0 &#123;</span><br><span class="line">  size_t reserved;</span><br><span class="line">  size_t Block_size;</span><br><span class="line">&#125; __main_block_desc_0_DATA = &#123; <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> __main_block_impl_0)&#125;;</span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    <span class="comment">/* @autoreleasepool */</span> &#123; __AtAutoreleasePool __autoreleasepool; </span><br><span class="line">        <span class="keyword">void</span> (*block)(<span class="keyword">void</span>) = ((<span class="keyword">void</span> (*)())&amp;__main_block_impl_0((<span class="keyword">void</span> *)__main_block_func_0, &amp;__main_block_desc_0_DATA));</span><br><span class="line">        ((<span class="keyword">void</span> (*)(__block_impl *))((__block_impl *)block)-&gt;FuncPtr)((__block_impl *)block);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们可以一眼看到的是源代码中的Block方法被转化为了__main_block_func_0方法。</p>
+<p>这个函数的参数__cself相当于C++中的实例方法中指向实例自身的变量this,或者是Objective-C中实例方法中的self。</p>
+<p>struct __main_block_impl_0的结构如下：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> __main_block_impl_0 &#123;</span><br><span class="line">  <span class="keyword">struct</span> __block_impl impl;</span><br><span class="line">  <span class="keyword">struct</span> __main_block_desc_0* Desc;</span><br><span class="line">  __main_block_impl_0(<span class="keyword">void</span> *fp, <span class="keyword">struct</span> __main_block_desc_0 *desc, <span class="keyword">int</span> flags=<span class="number">0</span>) &#123;</span><br><span class="line">    impl<span class="variable">.isa</span> = &amp;_<span class="built_in">NSConcreteStackBlock</span>;</span><br><span class="line">    impl<span class="variable">.Flags</span> = flags;</span><br><span class="line">    impl<span class="variable">.FuncPtr</span> = fp;</span><br><span class="line">    Desc = desc;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>这个代码看起来很复杂的样子，__main_block_impl_0这个构造函数我们可以去掉不看（如果block有参数，会被声明并追加到__main_block_impl_0结构中）。</p>
+<p>那么也就是一个block实际上由两部分组成，一部分是<strong>struct __block_impl impl</strong>，一部分是<strong>struct __main_block_desc_0* Desc</strong>。</p>
+<p>在转化后的文件中搜索可以得到__block_impl的定义，其中我加上了注释</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> __block_impl &#123;</span><br><span class="line">  <span class="keyword">void</span> *isa;<span class="comment">//所有对象都有isa指针，用于实现对象相关功能</span></span><br><span class="line">  <span class="keyword">int</span> Flags;<span class="comment">//按bit位表示一些block的附加信息</span></span><br><span class="line">  <span class="keyword">int</span> Reserved;<span class="comment">//今后版本升级所需的区域</span></span><br><span class="line">  <span class="keyword">void</span> *FuncPtr;<span class="comment">//函数指针，指向具体block函数调用地址</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>__main_block_desc_0定义：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">struct</span> __main_block_desc_0 &#123;</span><br><span class="line">  size_t reserved;<span class="comment">//今后版本升级所需的区域</span></span><br><span class="line">  size_t Block_size;<span class="comment">//Block的大小</span></span><br><span class="line">&#125; __main_block_desc_0_DATA = &#123; <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> __main_block_impl_0)&#125;;</span><br></pre></td></tr></table></figure>
+<p>所以我们可以看到一个block中其实有一个isa的指针，而isa指针实际上就是id类型，所以我们说block是对象，block能支持copy能添加到数组或者字典中。</p>
+<p>现在再回过头去看block里面的构造函数__main_block_impl_0，我们会发现_NSConcreteStackBlock这样一个变量。</p>
+<p>在文件中搜索_NSConcreteStackBlock我们还会发现另外一个类似的变量_NSConcreteGlobalBlock。</p>
+<p>这些都是表示block的类型，完整的分为以下三类</p>
+<pre><code><span class="number">1</span>、_NSConcreteGlobalBlock<span class="comment">//保存在数据区域（.data区），全局静态block，不访问任何外部变量</span>
+<span class="number">2</span>、_NSConcreteStackBlock<span class="comment">//保存在栈中的block，当函数返回时会被销毁</span>
+<span class="number">3</span>、_NSConcreteMallocBlock<span class="comment">//保存在堆中的block，当引用计数为0时被销毁</span>
+</code></pre><p>一般来说，我们声明的block如果不访问外部变量，那么就是Global类型的，如果访问了外部变量那么就是Stack的，另外在以下几种情况下会变成Malloc类型的，被复制到堆上</p>
+<pre><code><span class="number">1</span>、调用<span class="keyword">Block</span>的<span class="keyword">copy</span>实例方法
+<span class="number">2</span>、被作为函数返回值返回
+<span class="number">3</span>、被赋值给<span class="keyword">strong</span>或者<span class="keyword">block</span>类型的变量
+<span class="number">4</span>、在方法名中含有usingBlock的Cocoa框架方法或者GCD的API中传递<span class="keyword">Block</span>
+</code></pre><p>我们一个开始就说block是带有自动变量的匿名函数，其中带有自动变量的意思是block会自动复制变量的值到block中。</p>
+<p>这样就是block中能访问到block外的值，但是不能改变，如果我们想要改变则需要为外部变量添加__block修饰符。</p>
+<p>需要注意一点的是，对于Objective-C中的对象类型，因为变量是指针，在block内访问对象变量的时候实际上是复制了指针的值也就是地址到block中，所以对于对象类型是不需要添加__block修饰符就可以正确的使用的。</p>
+<p>而对于基本数据类型，比如int，float，double，bool等,不使用__block的时候，block只会复制这些类型的值，如果需要改变这些变量是需要添加__block修饰符的。</p>
+<p>我们刚刚提到了block访问外部变量，当block访问外部的成员变量的时候可能会造成循环引用。那么我们都知道在ARC下，我们会将变量添加__weak修饰符来避免循环引用，这个方法在ARC下对于block也同样适用。但是在MRC中，并没有__weak，我们使用__block来修饰变量来避免循环引用。</p>
+<p>__block修饰词在MRC和ARC下都可以使用，但是在ARC下__block并不能避免循环引用，只有__weak才可以。</p>
+</span>
       
     </div>
 
@@ -290,7 +313,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数学/" rel="tag">#数学</a>
+            <a href="/tags/Code/" rel="tag">#Code</a>
+          
+            <a href="/tags/深入理解/" rel="tag">#深入理解</a>
           
         </div>
       
@@ -299,17 +324,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/04/欧几里德算法 & 扩展欧几里德算法/" rel="next" title="欧几里德算法 & 扩展欧几里德算法">
-                <i class="fa fa-chevron-left"></i> 欧几里德算法 & 扩展欧几里德算法
+              <a href="/2015/11/28/深入理解Function/" rel="next" title="深入理解Function">
+                <i class="fa fa-chevron-left"></i> 深入理解Function
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/22/深入理解RSA/" rel="prev" title="深入理解RSA">
-                深入理解RSA <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

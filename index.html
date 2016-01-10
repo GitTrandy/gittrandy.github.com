@@ -201,6 +201,109 @@
             
             
               
+                <a class="post-title-link" href="/2016/01/09/深入理解Block/" itemprop="url">
+                  深入理解Block
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-09T18:31:26+08:00" content="2016-01-09">
+              2016-01-09
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/源码/" itemprop="url" rel="index">
+                    <span itemprop="name">源码</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            从定义描述上来说，block是带有自动变量的匿名函数。
+从数据结构上来说，block是Objective-C的对象。
+一个标注的Block应该被定义为这样： ^ 返回值类型 参数列表 表达式
+如： ^ int (int a) { return a; };
+但是我们有时候会省略一部分，比如省略掉返回值类型的： ^ (int a) { a++; }
+或者省略掉返回值和参数列表的： ^ { printf(“hello block”);}
+我们知道Objective-C里面的方法都会具体在执行的时候转化为C语言的代码，比如：objc_msgSend
+而其实Block也是如此。
+我们编写一段简单的Blo
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/09/深入理解Block/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2015/11/28/深入理解Function/" itemprop="url">
                   深入理解Function
                 </a>
@@ -736,7 +839,7 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -785,7 +888,7 @@ GCD(a,b) = GCD(b,a%b) （GCD表示求两个数的最大公约数）
       <div class="footer-inner"> <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2015</span>
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
